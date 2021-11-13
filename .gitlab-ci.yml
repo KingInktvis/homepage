@@ -7,6 +7,6 @@ deploy:
     - git config --global user.email "${GITLAB_USER_EMAIL}"
   script:
     - git remote add github git@github.com:KingInktvis/homepage.git
-    - git push github
+    - git push github HEAD:master
   only:
     - master
