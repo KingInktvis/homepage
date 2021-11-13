@@ -1,7 +1,7 @@
 ---
 title: "Tech"
 date: 2021-11-13T12:14:05+01:00
-draft: true
+draft: false
 ---
 
 # Technologieën
