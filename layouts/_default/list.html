@@ -1,3 +1,7 @@
 {{ define "main" }}
-
+{{ range .Pages }}
+{{ if not .Draft }}
+<a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+{{ end }}
+{{ end }}
 {{ end }}

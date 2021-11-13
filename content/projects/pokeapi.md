@@ -1,7 +1,7 @@
 ---
 title: "Pokeapi"
 date: 2021-11-13T12:14:47+01:00
-draft: true
+draft: false
 ---
 
 # Pokeapi
