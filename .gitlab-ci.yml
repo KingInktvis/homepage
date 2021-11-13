@@ -1,0 +1,12 @@
+deploy:
+  image: bitnami/git:latest
+  before_script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$GIT_SSH_PRIV_KEY")
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+  script:
+    - git remote add github git@github.com:KingInktvis/homepage.git
+    - git push github
+  only:
+    - master
