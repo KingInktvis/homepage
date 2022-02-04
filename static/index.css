@@ -5,10 +5,32 @@ html{
 }
 
 body{
+    --background-color: #f4f3f1;
+    --color:rgb(20, 20, 20);
+}
+body.dark-theme{
+    --background-color: rgb(44, 38, 38);
+    --color:rgb(220, 225, 230);
+}
+body{
     margin:0;
-    background-color: #f4f3f1;
+    background: var(--background-color);
+    color: var(--color);
 }
 
+button{
+    --bg: rgb(255,255,255);
+}
+button.dark-theme{
+    --bg: rgb(100,100,100);
+}
+button{
+    background: var(--bg);
+}
+#darkmode-toggle{
+    /* float:right; */
+    margin: auto;
+}
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -16,7 +38,6 @@ body{
 
 main{
     padding: 1em;
-    color:rgb(20, 20, 20);
 }
 
 footer {
@@ -53,7 +74,7 @@ header nav {
     }
 }
 
-.menu-item{
+.menu-item {
     margin: 4px; 
     text-align: center;
     background-color: #3434e4;
@@ -63,9 +84,14 @@ header nav {
 }
 
 a {
+    color: currentColor;
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-  }
+img[src*="#img-sm"] {
+    max-width:33%;
+}
+
+img[src*="#img-lg"] {
+    max-width:100%;
+}

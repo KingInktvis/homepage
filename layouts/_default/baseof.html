@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <title>title</title>
+    <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
+    <script src="/dark-mode.js"></script>
     <header>
         <nav>
             {{ range $item := .Site.Menus.main }}
@@ -17,12 +18,14 @@
 
             {{ end }}
         </nav>
-
     </header>
-    <main>
-        {{ block "main" . }}
-        {{ end }}
-    </main>
+    <div id="darkmode-toggle">Light mode</div>
+    <div class="container">
+        <main>
+            {{ block "main" . }}
+            {{ end }}
+        </main>
+    </div>
 </body>
 
 </html>
