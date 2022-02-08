@@ -5,6 +5,7 @@ draft: false
 ---
 
 # About
+![me](/images/me.webp#img-head)
 
 Ik ben Rik de Vries een 24 jarige software engineer.
 Ik sta altijd open voor een goed gesprek en om nieuwe dingen te leren.

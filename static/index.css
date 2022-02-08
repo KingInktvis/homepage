@@ -88,6 +88,13 @@ a {
     text-decoration: none;
 }
 
+img[src*="#img-head"] {
+    max-width:10em;
+    border-radius: 10em;
+    margin:auto;
+    display: block;
+}
+
 img[src*="#img-sm"] {
     max-width:33%;
 }
